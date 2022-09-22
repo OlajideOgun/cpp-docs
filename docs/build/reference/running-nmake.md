@@ -41,6 +41,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 | **`/S`** | Suppresses display of executed commands. To suppress display in part of a makefile, use the **`@`** command modifier or [`.SILENT`](dot-directives.md). To set or clear **`/S`** for part of a makefile, use `!CMDSWITCHES`. |
 | **`/T`** | Updates timestamps of command-line targets (or first makefile target) and executes preprocessing commands but doesn't run the build. |
 | **`/U`** | Must be used in conjunction with **`/N`**. Dumps inline NMAKE files so that the **`/N`** output can be used as a batch file. |
+| **`/W`** | Displays the full command (process name and arguments) of any failed child process. Useful with **`/P`** for debugging a makefile.
 | **`/X`** *filename* | Sends NMAKE error output to *filename* instead of standard error. Spaces or tabs can precede *filename*. To send error output to standard output, specify a dash (`-`) for *filename*. Doesn't affect output from commands to standard error. |
 | **`/Y`** | Disables batch-mode inference rules. When this option is selected, all batch-mode inference rules are treated as regular inference rules. |
 
